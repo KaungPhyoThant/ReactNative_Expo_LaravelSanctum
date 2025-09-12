@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Input Styles */
+.label {
+  @apply text-base font-medium text-gray-700 mb-2;
+}
+
+.input {
+  @apply w-full px-4 py-3 border-2 rounded-lg bg-white text-base;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Custom Button Styles */
+.custom-btn {
+  @apply bg-blue-600 rounded-lg px-6 py-3 min-h-[48px];
+  @apply flex items-center justify-center;
+  @apply active:bg-blue-700 disabled:bg-gray-400;
+}
+
+/* Text Styles */
+.text-white-100 {
+  @apply text-white;
+}
+
+.paragraph-semibold {
+  @apply text-base font-semibold;
+}
+
+.base-regular {
+  @apply text-base font-normal;
+}
+
+.base-bold {
+  @apply text-base font-bold;
+}
+
+/* Utility Classes */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+/* Primary Color */
+.text-primary {
+  @apply text-blue-600;
+}
+
+.border-primary {
+  @apply border-blue-600;
+}
